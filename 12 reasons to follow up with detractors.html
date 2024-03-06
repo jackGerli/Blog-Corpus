@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"04cd7c1181",applicationID:"258505292"};;/*! For license information please see nr-loader-rum-1.252.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const x=(0,n.mF)().o;var E=r(385),D=r(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,k);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.252.1",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([g,e,r,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},8862:(e,t,r)=>{"use strict";r.d(t,{j:()=>A});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"],h=["setErrorHandler","finished","addToTrace","addRelease"];function v(){const e=(0,g.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var m=r(2825);const b=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let y=!1;function A(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,A=arguments.length>3?arguments[3]:void 0,{init:w,info:_,loader_config:x,runtime:E={loaderType:p},exposed:D=!0}=t;const k=(0,g.gG)();_||(w=k.init,_=k.info,x=k.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,x||{}),_.jsAttributes??={},d.v6&&(_.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,_);const j=(0,i.P_)(e.agentIdentifier),S=[_.beacon,_.errorBeacon];y||(j.proxy.assets&&(b(j.proxy.assets),S.push(j.proxy.assets)),j.proxy.beacon&&S.push(j.proxy.beacon),v(),(0,g.EZ)("activatedFeatures",m.T)),E.denyList=[...j.ajax.deny_list||[],...j.ajax.block_internal?S:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),v=p.get("tracer"),m="api-",b=m+"ixn-";function y(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),_(m,n,!0,o||null===r?"session":void 0)(t,r)}function A(){}h.forEach((e=>{g[e]=_(m,e,!0,"api")})),g.addPageAction=_(m,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=_(m,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,_(m,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return y(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return y("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return y("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new A).get()};var w=A.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(b+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(v.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw v.emit("fn-err",[arguments,this,e],r),e}finally{v.emit("fn-end",[(0,s.z)()],r)}}}};function _(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=_(b,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),g}(e.agentIdentifier,A)),void 0===e.exposed&&(e.exposed=D),y=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.252.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-coXLfM7RkXRTFzWd9lXnf/fAuVs/D91sUGj0PeykZ9LOawtrZP/2njEtfjyJtUkhEhkSa8dmiYkqP0kHTmBVFA=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.1.PROD"]=self["webpackChunk:NRBA-1.252.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(8862);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,957));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,v.D)(e,w)}function w(e,t){return t}var _=i(8632),x=i(4402),E=i(4351);var D=i(5546),k=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,k.N)((()=>(0,D.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,D.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[p,T,P],loaderType:"lite"})})()})();</script>
+  <meta name="viewport" content="width=device-width" />
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- Jetpack Site Verification Tags -->
+<meta name="facebook-domain-verification" content="p5egqw6o71ye74yem5uk37bwyntkk2" />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v20.4 (Yoast SEO v20.4) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>12 reasons to follow up with detractors</title>
+	<meta name="description" content="Running a successful NPS program is more than simply asking your customers for feedback. It’s what you do with that feedback that matters — especially with detractors. Here are 12 reasons to follow up with detractors you can’t miss." class="yoast-seo-meta-tag" />
+	<link rel="canonical" href="https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" class="yoast-seo-meta-tag" />
+	<meta property="og:locale" content="en_US" class="yoast-seo-meta-tag" />
+	<meta property="og:type" content="article" class="yoast-seo-meta-tag" />
+	<meta property="og:title" content="Get personal: 12 reasons to follow up with detractors" class="yoast-seo-meta-tag" />
+	<meta property="og:description" content="Running a successful NPS program is more than simply asking your customers for feedback. It’s what you do with that feedback that matters — especially with detractors. Here are 12 reasons to follow up with detractors you can’t miss." class="yoast-seo-meta-tag" />
+	<meta property="og:url" content="https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" class="yoast-seo-meta-tag" />
+	<meta property="og:site_name" content="Delighted" class="yoast-seo-meta-tag" />
+	<meta property="article:publisher" content="https://www.facebook.com/delighted" class="yoast-seo-meta-tag" />
+	<meta property="article:published_time" content="2020-01-14T09:30:00+00:00" class="yoast-seo-meta-tag" />
+	<meta property="article:modified_time" content="2023-06-13T16:32:57+00:00" class="yoast-seo-meta-tag" />
+	<meta property="og:image" content="https://delighted.com/wp-content/uploads/2020/01/follow-up-detractors-og-1f02eeab6850e8701754d46bdb638136ba886ae579bef6012f6e8005cd10b445.png" class="yoast-seo-meta-tag" />
+	<meta property="og:image:width" content="1200" class="yoast-seo-meta-tag" />
+	<meta property="og:image:height" content="630" class="yoast-seo-meta-tag" />
+	<meta property="og:image:type" content="image/png" class="yoast-seo-meta-tag" />
+	<meta name="author" content="The Editorial Team" class="yoast-seo-meta-tag" />
+	<meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag" />
+	<meta name="twitter:creator" content="@delighted" class="yoast-seo-meta-tag" />
+	<meta name="twitter:site" content="@delighted" class="yoast-seo-meta-tag" />
+	<meta name="twitter:label1" content="Written by" class="yoast-seo-meta-tag" />
+	<meta name="twitter:data1" content="The Editorial Team" class="yoast-seo-meta-tag" />
+	<meta name="twitter:label2" content="Est. reading time" class="yoast-seo-meta-tag" />
+	<meta name="twitter:data2" content="10 minutes" class="yoast-seo-meta-tag" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors","url":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors","name":"12 reasons to follow up with detractors","isPartOf":{"@id":"https://delighted.com/#website"},"primaryImageOfPage":{"@id":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors#primaryimage"},"image":{"@id":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors#primaryimage"},"thumbnailUrl":"https://delighted.com/wp-content/uploads/2021/11/12-reasons-to-follow-up-with-detractors-feat.png","datePublished":"2020-01-14T09:30:00+00:00","dateModified":"2023-06-13T16:32:57+00:00","author":{"@id":"https://delighted.com/#/schema/person/2f438d74f634c824b2f9ab02d4079384"},"description":"Running a successful NPS program is more than simply asking your customers for feedback. It’s what you do with that feedback that matters — especially with detractors. Here are 12 reasons to follow up with detractors you can’t miss.","breadcrumb":{"@id":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://delighted.com/blog/12-reasons-to-follow-up-with-detractors"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors#primaryimage","url":"https://delighted.com/wp-content/uploads/2021/11/12-reasons-to-follow-up-with-detractors-feat.png","contentUrl":"https://delighted.com/wp-content/uploads/2021/11/12-reasons-to-follow-up-with-detractors-feat.png","width":1200,"height":630,"caption":"nps detractors featured image"},{"@type":"BreadcrumbList","@id":"https://delighted.com/blog/12-reasons-to-follow-up-with-detractors#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://delighted.com/"},{"@type":"ListItem","position":2,"name":"blog [Index]","item":"https://delighted.com/blog"},{"@type":"ListItem","position":3,"name":"Get personal: 12 reasons to follow up with detractors"}]},{"@type":"WebSite","@id":"https://delighted.com/#website","url":"https://delighted.com/","name":"Delighted","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://delighted.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://delighted.com/#/schema/person/2f438d74f634c824b2f9ab02d4079384","name":"The Editorial Team","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://delighted.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/e0671ac48ab84eab7083e3449bba2799?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/e0671ac48ab84eab7083e3449bba2799?s=96&d=mm&r=g","caption":"The Editorial Team"},"description":"The Editorial Team consists of external and internal Delighted thought leaders from various roles and industries. These experts provide educational content for companies looking to create highly impactful user-focused experience programs through self-serve solution guides, personal narratives, and how-to strategies.","url":"https://delighted.com/blog/author/delighted-marketing"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Delighted &raquo; Feed" href="https://delighted.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Delighted &raquo; Comments Feed" href="https://delighted.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Delighted &raquo; Get personal: 12 reasons to follow up with detractors Comments Feed" href="https://delighted.com/blog/12-reasons-to-follow-up-with-detractors/feed" />
+<link rel='stylesheet' id='all-css-0' href='https://delighted.com/_static/??-eJx1izkOgCAQAD8kLFoIFsa3cCVu5DAsxvB7aWxMbOeA+2SYbLicJ7BE4DTtaHMiHjHxTgb4Jtp1xYwu/4lDqmBCtgcLaIouDai24N9ji+soxTJLpSbxALQRL2c=' type='text/css' media='all' />
+<style id='admin-bar-inline-css'>
+
+		@media screen { html { margin-top: 32px !important; } }
+		@media screen and ( max-width: 782px ) { html { margin-top: 46px !important; } }
+	
+@media print { #wpadminbar { display:none; } }
+</style>
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='all-css-2' href='https://delighted.com/_static/??-eJzTLy/QzcxLzilNSS3WzyrWz01NyUxMzUnNTc0rQeEU5CRWphbp5qSmJyZX6uVm5uklFxfr6OPTDpRD5sM02efaGpobWJqZW1gYGQIARPUu7A==' type='text/css' media='all' />
+<style id='jetpack-sharing-buttons-style-inline-css'>
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='all-css-12' href='https://delighted.com/_static/??/wp-content/plugins/weglot/dist/css/front-css.css,/wp-content/plugins/weglot/app/styles/new-flags.css?m=1709685054' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-14' href='https://delighted.com/_static/??/wp-content/themes/blankslate/style.css,/wp-content/plugins/wordpress-seo/css/dist/adminbar-2040.css?m=1709685054' type='text/css' media='all' />
+<script type="text/javascript" src="https://delighted.com/wp-content/plugins/weglot/dist/front-js.js?m=1679933013g" ></script><script id="wpp-json" type="application/json">
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/delighted.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/delighted.com\/wp-json\/wordpress-popular-posts","ID":1218,"token":"8759a1c911","lang":0,"debug":0}
+</script>
+<script src="https://delighted.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=6.0.5" id="wpp-js-js"></script>
+<script type="text/javascript" src="https://delighted.com/_static/??-eJyVktFqwzAMRX9oqdMy1u5h7FOMYmuJU9tKJblhfz+3dGzsYThgsOHeoyshm3XpQnaxeBQz13MpyJ+Pa5dC3s3yZP4zdSmMDIq/zY6yYlajE6aKDBHyWWI1/dA7cUwxKjUxE4JHtjKBp7WJKBrilnY8DlSyw7Z2IA2Fxwi8JWKiK3K4+5owJYoali0RDhjbin+QK2IHFLUhL6UV4mSvEIMHJW7e+E0Ep7YqAiPaW5kmMJGHti06onNA+etdYhlDFrMS+4VrfCdIXX2lUJIBEdT7j/ZBtNZIibJ8y92hf+4fM76nt/2xf305nk6H/fwF0ec2aA==" ></script><link rel="https://api.w.org/" href="https://delighted.com/wp-json/" /><link rel="alternate" type="application/json" href="https://delighted.com/wp-json/wp/v2/posts/1218" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://delighted.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://delighted.com/?p=1218' />
+<link rel="alternate" type="application/json+oembed" href="https://delighted.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors" />
+<link rel="alternate" type="text/xml+oembed" href="https://delighted.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors&#038;format=xml" />
+
+<link rel="alternate" href="https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" hreflang="en"/>
+<link rel="alternate" href="https://delighted.com/es/blog/12-razones-para-hacer-un-seguimiento-de-los-detractores" hreflang="es"/>
+<link rel="alternate" href="https://delighted.com/de/blog/12-reasons-to-follow-up-with-detractors" hreflang="de"/>
+<link rel="alternate" href="https://delighted.com/pt-br/blog/12-reasons-to-follow-up-with-detractors" hreflang="pt-br"/>
+<link rel="alternate" href="https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" hreflang="x-default"/>            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-placeholder,.wpp-widget-block-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+                  <script type="text/javascript" nonce="">
+        var delighted_nonce = '';
+      </script><link rel="pingback" href="https://delighted.com/xmlrpc.php" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>    <script id="algolia-script-js-after" nonce="">
+      var algolia_enviro = 'p';
+      var algolia_app_id = 'XCR90T2Y0P';
+      var algolia_search_key = '2afab309f2a10b9f25188fd86815148f';
+    </script>
+
+    <link rel="icon" href="https://delighted.com/wp-content/uploads/2020/02/cropped-favicon-512-1.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://delighted.com/wp-content/uploads/2020/02/cropped-favicon-512-1.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://delighted.com/wp-content/uploads/2020/02/cropped-favicon-512-1.png?w=180" />
+<meta name="msapplication-TileImage" content="https://delighted.com/wp-content/uploads/2020/02/cropped-favicon-512-1.png?w=270" />
+<script data-ampdevmode type="text/javascript">
+/* <![CDATA[ */
+	var wpNotesIsJetpackClient = true;
+	var wpNotesIsJetpackClientV2 = true;
+		/* ]]> */
+	window.addEventListener('message', function ( event ) {
+		// Confirm that the message is from the right origin.
+		if ('https://widgets.wp.com' !== event.origin) {
+			return;
+		}
+		// Check whether 3rd Party Cookies are blocked
+		var has3PCBlocked = 'WPCOM:3PC:blocked' === event.data;
+
+		var tagerElement = document.getElementById('wp-admin-bar-notes');
+
+		if ( has3PCBlocked && tagerElement ) {
+			// Hide the notification button/icon
+			tagerElement.style.display = 'none';
+		}
+	}, false );
+</script>
+		  <script type="text/javascript">
+
+    observer = new MutationObserver(mCallback);
+
+    function mCallback(mutations) {
+      alterHeaderHeight();
+    }
+
+    function alterHeaderHeight(){
+      if( document.getElementsByClassName("intercom-app")[0].contains(document.getElementsByName('intercom-banner-frame')[0])){
+        document.getElementsByClassName('marketing-header-container')[0].style['margin-top'] = '48px';
+      } else {
+        document.getElementsByClassName('marketing-header-container')[0].style['margin-top'] = '0px';
+      }
+    }
+
+    function addObserverIfDesiredNodeAvailable() {
+        var target = document.getElementsByClassName("intercom-app")[0];
+        if(!target) {
+            // need to wait for intercom header
+            window.setTimeout(addObserverIfDesiredNodeAvailable,500);
+            return;
+        }
+        var config = {
+          attributes: true,
+          childList: true,
+          characterData: true,
+          subtree: true
+        };
+
+        alterHeaderHeight();
+
+        observer.observe(target,config);
+    }
+    addObserverIfDesiredNodeAvailable();
+  </script>
+  <!-- Google Tag Manager -->
+<script id="gtmScript" nonce="" data-nonce="">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_auth=soX-5CVDCw2eNtOM7FjKjQ&gtm_preview=env-1&gtm_cookies_win=x';var n=d.querySelector('[nonce]');
+n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PV42FBV');</script>
+
+<script type="text/javascript" nonce="">
+jQuery.ajax({
+  url: '//munchkin.marketo.net/munchkin.js',
+  dataType: 'script',
+  cache: true,
+  success: function() {
+    Munchkin.init('099-SJL-057');
+  }
+});
+</script>
+
+<script src="https://accounts.google.com/gsi/client" async defer nonce=""></script>
+
+<script type="text/javascript" nonce="">
+  generateCsrfToken = () => {
+    var a = new Uint32Array(2);
+    window.crypto.getRandomValues(a);
+    return a[0].toString(16) + a[1].toString(16);
+  };
+  setDelightedCsrfTokenCookie = (csrfToken) => {
+    var fiveMinutesFromNow = new Date(new Date().getTime() + 5 * 60 * 1000);
+    var clean_csrf_token = csrfToken.replace(/\W/g, '');
+    Cookies.set("d_csrf_token", clean_csrf_token, {
+      domain: "delighted.com",
+      expires: fiveMinutesFromNow,
+      sameSite: "Lax",
+      secure: true
+    });
+  };
+  submitLoginForm = (url, params) => {
+    var form = document.createElement("form");
+    form.method = "post";
+    form.action = url;
+    for (name in params) {
+      var field = document.createElement("input");
+      field.type = "hidden";
+      field.name = name;
+      field.value = params[name].toString();
+      form.appendChild(field);
+    }
+    document.body.appendChild(form);
+    form.submit();
+  };
+  onGoogleOneTapCredentialResponse = (response) => {
+    var csrfToken = generateCsrfToken();
+    setDelightedCsrfTokenCookie(csrfToken);
+    submitLoginForm("https://app.delighted.com/auth/google-one-tap/callback", {
+      credential: response.credential,
+      csrf_token: csrfToken
+    });
+  };
+  onGoogleOneTapMoment = (moment) => {
+    var withGoogle = document.getElementById("sign-up-form-with-google");
+    var withoutGoogle = document.getElementById("sign-up-form-without-google");
+    if (moment.isDisplayed()) {
+      withGoogle.style.display = "none";
+      withoutGoogle.style.display = "block";
+    } else {
+      withGoogle.style.display = "block";
+      withoutGoogle.style.display = "none";
+    }
+  };
+
+  window.addCsrfToken = (el) => {
+    var csrfToken = generateCsrfToken();
+    setDelightedCsrfTokenCookie(csrfToken);
+
+    var form = jQuery(el);
+    var csrfTokenField = form.find("input[name=csrf_token]");
+    if (csrfTokenField.length == 0) {
+      jQuery('<input>').attr({
+        type: 'hidden',
+        id: 'csrf_token',
+        name: 'csrf_token',
+        value: csrfToken
+      }).appendTo(form);
+    } else {
+      csrfTokenField.val(csrfToken);
+    }
+  };
+
+</script>
+
+<style>
+  .weglot-default {
+    display: block;
+  }
+</style>
+</head>
+<body class="post-template-default single single-post postid-1218 single-format-standard logged-in admin-bar no-customize-support wp-embed-responsive blog">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV42FBV&gtm_auth=soX-5CVDCw2eNtOM7FjKjQ&gtm_preview=env-1&gtm_cookies_win=x"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- hide one tap on landing pages, amazon business prime, and if flagged -->
+  <div id="g_id_onload"
+    data-context="signup"
+    data-callback="onGoogleOneTapCredentialResponse"
+    data-moment_callback="onGoogleOneTapMoment"
+    data-client_id="7793828242-8rtdbfkdgishg4hao9epn5sf3sb1tka6.apps.googleusercontent.com"
+    data-survey_type_id=""
+    data-state_cookie_domain="delighted.com" ></div>
+  <div class="layout">
+    <div class="marketing-header-container">
+
+      <script nonce="">
+        jQuery(() => {
+          new HeaderShadow(".marketing-header");
+          new Hamburglar(".marketing-header-hamburglar-icon a", {menu: ".blog-header-hamburglar-menu"});
+        });
+      </script>
+
+      <div class="marketing-header marketing-header-light marketing-header-blog has-shadow">
+        <div class="marketing-header-flash">
+          <div class="marketing-header-flash-message">
+            <p id="flash-message-content"></p>
+          </div>
+        </div>
+
+        <script nonce="">
+        jQuery(document).ready(function() {
+          if (Cookies.get("flash_message")) {
+            var AppCookies = Cookies.withConverter({
+              write: Cookies.converter.write,
+              read: function (value) {
+                value = value.replace(/\+/g, ' ');
+                return Cookies.converter.read(value);
+              }
+            });
+            jQuery("#flash-message-content").text(AppCookies.get("flash_message"));
+            jQuery(".marketing-header-flash").show();
+            AppCookies.remove("flash_message", { domain: "." + Util.getDomain() });
+          }
+        });
+        </script>
+        <a href="/" aria-label="Delighted home">
+          <div class="marketing-header-delighted-logo"></div>
+        </a>
+        <div class="marketing-header-actions">
+          <ul class="marketing-header-actions-left">
+            <li class='marketing-header-actions-primary'>
+              <a class="marketing-header-actions-primary-link" href="/surveys">
+                Surveys
+              </a>
+            </li><li class='marketing-header-actions-primary'>
+              <a class="marketing-header-actions-primary-link" href="/survey-templates">
+                Templates
+              </a>
+            </li><li class="marketing-header-actions-primary">
+              <a class="marketing-header-actions-primary-link" href="/resources">
+                Resources
+              </a>
+            </li><li class="marketing-header-actions-primary">
+              <a class="marketing-header-actions-primary-link" href="/pricing">
+                Pricing
+              </a>
+            </li>
+          </ul>
+          <ul class="marketing-header-actions-right">
+                          <li class="marketing-header-actions-primary desktop-search-form">
+  <form role="search" method="get" class="search-form" id="nav-search-box" action="https://delighted.com">
+    <input type="search" class="search-field" placeholder="" value="" name="s" aria-label="Search" />
+    <button id="search-button" class="search-submit" aria-label="Site search">
+      <svg aria-hidden="true" class="search-icon" width="18" height="18" viewbox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z"></path></svg>
+    </button>
+  </form>
+</li>
+
+<li class="marketing-header-actions-primary mobile-search-form">
+  <div class="search-button">
+    <a href="https://delighted.com/?s="><svg aria-hidden="true" class="search-icon" width="18" height="18" viewbox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z"></path></svg></a>
+  </div>
+</li>
+                        <li class='marketing-header-actions-primary'>
+              <a rel="nofollow" class="marketing-header-actions-primary-link" href="/contact-sales">
+                Contact sales
+              </a>
+            </li><li class="marketing-header-actions-primary">
+              <a rel="nofollow" class="marketing-header-actions-primary-link" href="https://app.delighted.com/signin">
+                Sign in
+              </a>
+            </li><li class="marketing-header-actions-primary">
+
+              
+              <a class="btn btn-primary-purple btn-mobile-scale-down sign-up" href="https://app.delighted.com/signup">Get started</a>
+            </li>
+          </ul>
+        </div>
+        <div class="marketing-header-hamburglar-icon">
+          <a href="#">
+            <img src="https://dcx14qs33eg2z.cloudfront.net/assets/icon-hamburger-2x-8093b2057275e3a29adce3461a31fd0df0e20be5f3842495989212f9156386ff.png" alt="menu" width="19" height="15">
+          </a>
+        </div>
+        <div class="marketing-header-subheader">
+          <ul class="marketing-header-actions-left">
+            <li class="marketing-header-actions-primary">
+              <a class="marketing-header-actions-primary-link" href="/blog">
+                Delighted Blog
+              </a>
+            </li>
+          </ul>
+          <ul class="marketing-header-actions-right">
+            <li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/experience-management-101">Experience Management 101</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/creating-surveys">Creating Surveys</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/distributing-surveys">Distributing Surveys</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/reporting-and-analysis">Reporting &amp; Analysis</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/taking-action">Taking Action</a></li>          </ul>
+        </div>
+      </div>
+
+      <ul class="blog-header-hamburglar-menu blog-header-hamburglar-menu-reduced">
+        <li class='blog-header-hamburglar-menu-reduced-item'>
+          <a class="" href="/surveys">
+            Surveys
+          </a>
+        </li>
+        <li class='blog-header-hamburglar-menu-reduced-item'>
+          <a class="" href="/survey-templates">
+            Templates
+          </a>
+        </li>
+        <li class="blog-header-hamburglar-menu-reduced-item">
+          <a class="" href="/resources">
+            Resources
+          </a>
+        </li>
+        <li class="blog-header-hamburglar-menu-reduced-item">
+          <a class="" href="/pricing">
+            Pricing
+          </a>
+        </li>
+        <li class="blog-header-hamburglar-menu-reduced-item">
+          <a class="" href="https://app.delighted.com/signin">
+            Sign in
+          </a>
+        </li>
+        <li class='blog-header-hamburglar-menu-reduced-item'>
+          <a class="" href="/contact-sales">
+            Contact sales
+          </a>
+        </li>
+        <li class="blog-header-hamburglar-menu-reduced-item">
+          <div class="blog-header-blog-subscribe">
+            <a class="btn btn-primary-purple" href="https://app.delighted.com/signup?utm_source=blog">Get started</a>
+          </div>
+        </li>
+                  <li class='marketing-header-hamburglar-menu-reduced-item'>
+            <form role="search" method="get" class="search-form search-form-desktop" id="nav-search-box" action="https://delighted.com">
+  <input type="search" class="search-field" placeholder="" value="" name="s" aria-label="Search" />
+  <button id="search-button" class="search-submit"  aria-label="Site search">
+    <svg aria-hidden="true" class="search-icon" width="18" height="18" viewbox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z"></path></svg>
+  </button>
+</form>
+          </li>
+                <li class="blog-header-hamburglar-menu-reduced-item blog-hamburglar-divider">
+          <hr>
+        </li>
+        <li class="blog-header-hamburglar-menu-reduced-item blog-hamburglar-category-header blog-hamburglar-blog-home-header">
+          <a class="marketing-header-actions-blog-home-link" href="/blog">Blog</a>
+        </li>
+        <li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/experience-management-101">Experience Management 101</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/creating-surveys">Creating Surveys</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/distributing-surveys">Distributing Surveys</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/reporting-and-analysis">Reporting &amp; Analysis</a></li><li class="marketing-header-actions-primary"><a class="marketing-header-actions-primary-link" href="https://delighted.com/blog/taking-action">Taking Action</a></li>      </ul>
+      </div>
+    </div>
+  </div>
+  <div id="l-main">
+    <div class="l-container">
+<main id="content">
+      
+<article id="post-1218" class="post-1218 post type-post status-publish format-standard has-post-thumbnail hentry category-taking-action tag-closing-the-loop tag-customer-retention tag-customer-reviews-and-testimonials">
+  <header>
+    <div class="blog-header-title">
+      <span class="blog-single-hero-category">Taking Action </span>
+      <h1>Get personal: 12 reasons to follow up with detractors</h1>
+      <div class="blog-single-hero-author-block">
+          <div class="blog-single-hero-author-block-image"><img alt='' src='https://secure.gravatar.com/avatar/e0671ac48ab84eab7083e3449bba2799?s=60&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e0671ac48ab84eab7083e3449bba2799?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' decoding='async'/></div>
+          <div class="blog-single-hero-author-block-author"><a href="https://delighted.com/blog/author/delighted-marketing" title="Posts by The Editorial Team" rel="author">The Editorial Team</a><br/></div>
+      </div>
+    </div>
+    <div class="blog-header-image"><img width="1200" height="630" src="https://delighted.com/wp-content/uploads/2021/11/12-reasons-to-follow-up-with-detractors-feat.png?w=1200" class="attachment-blogheader size-blogheader wp-post-image" alt="nps detractors featured image" decoding="async" fetchpriority="high" srcset="https://delighted.com/wp-content/uploads/2021/11/12-reasons-to-follow-up-with-detractors-feat.png 1200w, https://delighted.com/wp-content/uploads/2021/11/12-reasons-to-follow-up-with-detractors-feat.png?resize=450,236 450w" sizes="(max-width: 1200px) 100vw, 1200px" /></div>
+  </header>
+  <div class="article-body">
+    <div class="article-body-main">
+      <div class="article-body-social-sidebar">
+        <div><a href="https://twitter.com/intent/tweet?text=Get personal: 12 reasons to follow up with detractors&url=https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" rel="noopener" class="ss-icon-social-circle ss-icon-large sidebar-links-social-service muted" target="_blank"></a></div>
+        <div><a href="https://www.facebook.com/sharer.php?u=https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" rel="noopener" class="ss-icon-social-circle ss-icon-large sidebar-links-social-service muted" target="_blank"></a></div>
+        <div><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://delighted.com/blog/12-reasons-to-follow-up-with-detractors" rel="noopener" class="ss-icon-social-circle ss-icon-large sidebar-links-social-service muted"></a></div>
+      </div>
+      <div class="article-body-content">
+        
+<p>Often used as a barometer for brand health, Net Promoter Score surveys measure <a href="https://delighted.com/blog/customer-loyalty">customer loyalty</a> by identifying customers as promoters, passives, and detractors by asking:</p>
+
+
+
+<p><em>“How likely are you to recommend ABC Company?”</em></p>
+
+
+
+<p>Answers are then given on a scale of 0-10, with 10 being the “very likely” to recommend. Those who answer 9 or 10 are called “promoters,” and they are your brand’s biggest fans. Passives are customers who answer 7 or 8. Passive customers are not likely to hinder your business with negative word-of-mouth, nor are they likely to recommend your business.</p>
+
+
+
+<span id="more-1218"></span>
+
+
+
+<p>And then there are detractors.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-what-is-a-detractor">What is a detractor?</h2>
+
+
+
+<p>Detractors are customers who rate your brand between 0-6 as they are not satisfied with your company or the services provided, unlikely to make a repeat purchase, and more likely to share their negative experiences.</p>
+
+
+
+<p>While the idea of someone being a detractor to your brand is concerning, we’re here to tell you that it’s really not the end of the world: it’s an opportunity for growth.</p>
+
+
+
+<p>Running <a href="http://delighted.com/nps">NPS software</a> successfully is more than simply asking your customers for feedback. It’s about using that feedback to fundamentally improve your product or service. But an often undervalued aspect of doing NPS well is rigorously following up, also known as&nbsp;<a href="https://help.delighted.com/article/585-closing-the-loop">closing the loop</a>, with detractors.</p>
+
+
+
+<p>Following up with detractors and understanding the reasons behind their sentiment can lead to impactful product or service changes, and even guide the direction of your brand. While personally reaching out to each of your detractors is time-consuming, the benefits outweigh the costs.</p>
+
+
+
+<p>We’ve worked with thousands of companies who have seen the power of closing the loop on detractor feedback, and have compiled the top 12 reasons you should follow up with your detractors to improve the health of your business.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-1-convert-detractors-into-promoters">1. Convert detractors into promoters</h2>
+
+
+
+<p>The goal of any customer-focused company is to deliver a perfect experience to every customer, every time. Knowing that you’re almost guaranteed to miss the mark sometimes, you should view detractors as a gift not to be squandered.</p>
+
+
+
+<p>When a customer self-identifies as a detractor, it means you’ve successfully unearthed a tangible opportunity to right a wrong (or series of wrongs). It may seem counterintuitive, but you’ll likely find that some of your most loyal customers are former detractors. A detractor’s expectations are already low, which means they have high upside.</p>
+
+
+
+<p>Simply showing them that you care by following up on their survey feedback is often enough to turn them around. So reach out, acknowledge their experience, do your best to do right by them, and turn them into promoters. You’ll be able to report to your internal stakeholders that you’ve been able to improve your NPS, and have also gained more customers who are willing to promote your business.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-2-create-a-customer-centric-culture-where-everyone-is-accountable-for-each-detractor-s-experience">2. Create a customer-centric culture where everyone is accountable for each detractor’s experience</h2>
+
+
+
+<p>As your company and customer base grows, it’s all too easy to drift into thinking about the customer experience in numerical terms, instead of real human experiences. You begin to say things like: “1% of customers experienced a late shipment,” or “3% of customers were affected by this bug.”</p>
+
+
+
+<p>This sort of thinking leads to a disconnect between what you deliver and what your customers actually experience. It’s the exact opposite of the culture you want to create:&nbsp;<a href="/blog/customer-experience-trends-2020">84% of customers</a>&nbsp;say being treated like a person, not a number, is very important to winning their business.</p>
+
+
+
+<p>When you follow up with folks who didn’t have a great experience, it’s impossible to escape the fact that you let a real person down.</p>
+
+
+
+<p>Having a one-on-one conversation with a customer forces you to own the decisions your organization has made. You can either stand behind them, and risk losing the customer, or you can fix them.</p>
+
+
+
+<p>Whatever you choose, these one-on-one conversations help you understand exactly what type of experience your company delivers.</p>
+
+
+
+<p>In&nbsp;<a href="/blog/retail-customer-experience-guide">a recent blog</a>, we cited the importance of measuring the experience provided by employees when a customer visits a store or interacts with a sales/support rep.</p>
+
+
+
+<p>Collecting this feedback reveals gaps between what customers expect versus what your business provides. When your team personally follows up, it humanizes the customer and holds everyone accountable for what’s not working.</p>
+
+
+
+<p>With everyone owning the consequences of a customer interaction, you can minimize the number of future detractors — even churn — by making the necessary adjustments to employee training, processes, systems, and services from the insights detractor feedback provides.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-3-train-your-team-not-to-dread-negative-feedback-but-be-proactive-about-detractor-issues">3. Train your team not to dread negative feedback, but be proactive about detractor issues</h2>
+
+
+
+<p>Getting a piece of negative feedback is always jarring. The instinct may be to pass blame to another department, dismiss the feedback as customer error, or maybe even just ignore it altogether. All in all, it’s not uncommon for the feeling around negative feedback to be one of dread.</p>
+
+
+
+<p>However, digging in by following up often reveals that detractors are upset about things that can be solved relatively quickly by your support team. Maybe they can’t find their tracking number, or they want to return something but missed the window by a day. Maybe they’re requesting a product feature that you happen to have in private beta.</p>
+
+
+
+<p>Many of these acute issues can be resolved by your support team instantly. They can respond with the customer’s tracking number and info about when it will arrive. They can grant an extension on the return policy and include a free return shipping label. They can invite the customer into a preview of a feature that has yet to be launched. There’s nothing more rewarding than realizing that you already have a solution for a customer.</p>
+
+
+
+<p>But, you may not know that the issue they have is solvable until you follow up. Once you do, you’ll find these customers are often the easiest to convert to promoters. And once you’ve trained your team to follow up, you’ll be rewarded with a culture that doesn’t dread feedback, but instead works together to provide an improved experience for customers.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-4-open-a-line-of-communication-for-any-future-issues">4. Open a line of communication for any future issues</h2>
+
+
+
+<p>Once you’ve turned a detractor around, they will remember that positive experience. If they encounter any new issues, they’ll feel comfortable knowing they can reach out to a real person on your team who cares.</p>
+
+
+
+<p>This is incredibly valuable. It gives you the opportunity to head off any future problems before they have a chance to sour the relationship, essentially giving your company a second chance after their needs weren’t met.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-5-fill-in-the-blanks-when-a-detractor-does-not-leave-a-comment">5. Fill in the blanks when a detractor does not leave a comment</h2>
+
+
+
+<p>Detractors may not always answer the second part of the NPS survey: the <a href="https://delighted.com/blog/open-ended-questions">open-ended question</a> that asks why they rated you poorly. Even if they do leave a comment, they may not share the whole story.</p>
+
+
+
+<p>When you follow up, you have the chance to learn more about their entire experience. What caused the issue? What were they expecting? Were they told something that wasn’t true? This is invaluable for both helping the customer in the moment, as well as providing your team with a complete picture of where you can improve.</p>
+
+
+
+<p>Our biggest piece of advice: don’t hesitate to get personal in order to get the information you need to improve that customer’s experience so you can improve your business.</p>
+
+
+
+<p>Ask if they can provide more information as to why they’re likely not to recommend your brand. Take their feedback in stride, respond positively and, most importantly, thank them for any additional information they provide.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-6-increase-the-chance-of-retention-by-sharing-upcoming-improvements-with-detractors">6. Increase the chance of retention by sharing upcoming improvements with detractors</h2>
+
+
+
+<p>Detractor feedback can illuminate “soft” areas of your product or service for which there is no quick fix. While you may not be able to fix these issues immediately, it’s still good practice to acknowledge the pain the customer is feeling, and share any upcoming improvements on the product roadmap that could address their concerns.</p>
+
+
+
+<p>In the eyes of the customer, doing this shows that your company is taking the necessary actions to continually improve their experiences. The key here is to open a channel of communication that you can use to inform them of any new developments, and give yourself more chances to retain them.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-7-minimize-detractor-fall-out">7. Minimize detractor fall out</h2>
+
+
+
+<p><a href="https://www.qualtrics.com/xm-institute/roi-of-customer-experience-2018/">88%</a> of consumers&nbsp;who rate a company’s <a href="https://delighted.com/blog/what-is-customer-experience-cx-terms">CX</a> as “very good” are likely to recommend the company, compared with only 15% of those who rate a company’s CX as “very poor.” Not only are your detractors less likely to refer your business to others, but they are also more likely to speak negatively about your brand with friends, family, and online review sites.</p>
+
+
+
+<p>While following up with your detractors by acknowledging their concerns, showing empathy, and offering solutions may not be enough to avoid a negative Yelp review every time, it has been shown to help diffuse and lower the likelihood that a detractor will do so.</p>
+
+
+
+<p>So, let your detractors vent to you before they vent to anyone else. Responding to detractors in a timely fashion can disarm them, and pave the way for a much more constructive conversation.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-8-help-you-identify-who-your-silent-detractors-may-be">8. Help you identify who your silent detractors may be</h2>
+
+
+
+<p>Many issues, like a slightly late package, or a couple small bugs in a piece of software, don’t usually warrant an email to customer support. But these experiences add up! And they will slowly turn people into detractors.</p>
+
+
+
+<p>Only a small percentage of your total customer base will ever contact customer support and let you know they’re unhappy. But chances are, many more of your customers are experiencing the same issue, and feel the same way.</p>
+
+
+
+<p>Once you’ve been able to identify a pattern among your detractors, you’ll be able to proactively reach out to any other customers who haven’t logged a complaint yet, leading to a healthier customer base.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-9-stop-internal-issues-before-they-become-unsolvable">9. Stop internal issues before they become unsolvable</h2>
+
+
+
+<p>When evaluating <a href="https://delighted.com/net-promoter-score">NPS</a> scores and following up with your detractors, pay close attention to any patterns with the feedback being provided, and evaluate if the reasons for their low scores are inconsistent or so common that they could possibly be endemic to your business.</p>
+
+
+
+<p>If your analysis reveals the latter, then we recommend getting to the origin of the issue by conducting a&nbsp;<a href="/blog/address-cx-challenges-root-cause-analysis">root cause analysis</a>. Essentially, a root cause analysis is a problem-solving method that helps you treat the fundamental issue leading to complaints — not just the symptoms.</p>
+
+
+
+<p>Quickly identifying these hidden causes can help your business address them before they become unsolvable.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-10-stay-ahead-of-churn">10. Stay ahead of churn</h2>
+
+
+
+<p><a href="https://www.qualtrics.com/blog/customer-churn/">According to Qualtrics</a>, developing a predictive churn model consists of two phases: building and refining your data set and model; and testing and learning your response program. While each business incorporates many pieces of data into their predictive models, Qualtrics stresses that customer experience data (<a href="https://delighted.com/net-promoter-score">NPS</a>,&nbsp;<a href="https://delighted.com/what-is-customer-satisfaction-score">CSAT</a>,&nbsp;<a href="https://delighted.com/what-is-customer-effort-score">CES</a>) should be included in any retention-related modeling.</p>
+
+
+
+<p>Following up with your detractors to uncover more insight arms your team with proactive contextual data which eventually can be correlated to the binary data point of “customer did/did not churn.”</p>
+
+
+
+<p>For example, your team notices that three customers have churned this quarter. You also notice that they recently gave your business a low NPS score and your follow up efforts revealed that they were unhappy with a new service.</p>
+
+
+
+<p>By identifying this correlation, the customer success team can now look at other customers (who have yet to churn) citing the same reasons for dissatisfaction and conduct the necessary activities to keep them engaged with your brand.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-11-gain-the-most-valuable-customer-testimonial-there-is-a-detractor-turned-promoter">11. Gain the most valuable customer testimonial there is: a detractor turned promoter</h2>
+
+
+
+<p>There’s no story more compelling than one of redemption. A customer writes a review, starting out about how they were unsatisfied, but then details out all the changes and improvements a company made to turn their experience around.</p>
+
+
+
+<p>This type of social proof acknowledges that businesses aren’t infallible, and shows customers that if they are patient and give your business a second chance, you’ll prioritize their needs every time.</p>
+
+
+
+<p><a href="https://delighted.com/testimonials">Testimonial software</a>&nbsp;that’s built into your feedback platform makes gathering and publishing these types of reviews a cinch, so keep that in mind when&nbsp;<a href="/blog/choose-best-NPS-software">choosing an NPS tool</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-12-follow-up-with-detractors-to-show-that-your-brand-prioritizes-customers">12. Follow up with detractors to show that your brand prioritizes customers</h2>
+
+
+
+<p>By 2020’s end, it is expected that&nbsp;<a href="https://www.walkerinfo.com/docs/WALKER-Customers2020-ProgressReport.pdf">customer experience will overtake</a>&nbsp;price and product as the key brand differentiator. Moreover,&nbsp;<a href="https://www.walkerinfo.com/docs/WALKER-Customers2020-ProgressReport.pdf">86% of customers are willing to pay more</a>&nbsp;for a great customer experience when interacting with a brand — highlighting the mutually beneficial relationship between pleasing customers and running a top-notch CX program.</p>
+
+
+
+<p>Following up with your detractors is a small thing to show that your business cares about their voice and that their satisfaction and experiences are your team’s top priority, keeping your business on par (or even giving your company a leg up) on the competition.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-detractors-are-unavoidable-it-s-what-you-do-next-that-counts">Detractors are unavoidable. It’s what you do next that counts.</h2>
+
+
+
+<p>Having an NPS program is one of many ways to measure, evaluate, and mend the health of your brand, products, or services. Detractors are unavoidable, however, following up with them to uncover the reasons for their sentiment is a proactive way to help your brand provide better customer experiences.</p>
+
+
+
+<p>Following up with detractors is essential for positioning your business as customer-centric. Personal responses, acknowledgment of concern, and taking action makes customers feel valued, all of which can be done through our <a href="http://delighted.com">experience management software</a>.</p>
+
+
+
+<p>Looking to do more than measure NPS? Start listening to your customers wherever, whenever, with&nbsp;Delighted’s proven survey methods.</p>
+<div class="entry-links"></div>
+                <div class="story-author">
+  <div class="story-author-body">
+    <div class="story-author-headline">About The Editorial Team</div>
+    The Editorial Team consists of external and internal Delighted thought leaders from various roles and industries. These experts provide educational content for companies looking to create highly impactful user-focused experience programs through self-serve solution guides, personal narratives, and how-to strategies. <a href="https://delighted.com/blog/author/delighted-marketing" class="author-more-link">More</a>
+  </div>
+</div>
+                <div class="story-tags">
+<div class='story-tag'><a href='https://delighted.com/blog/topic/closing-the-loop'>Closing the loop</a></div> <div class='story-tag'><a href='https://delighted.com/blog/topic/customer-retention'>Customer retention</a></div> <div class='story-tag'><a href='https://delighted.com/blog/topic/customer-reviews-and-testimonials'>Customer reviews and testimonials</a></div> </div>
+        
+<div class="footer-tips-signup">
+  <div class="instory-tips-body footer-tips-body">
+      <div class="instory-tips-copy">Get more tips and tricks for crafting world-class experiences, delivered to your inbox.</div>
+      <div class="instory-tips-subscribe-form">
+                
+<script src="https://app-sj30.marketo.com/js/forms2/js/forms2.min.js"></script>
+<style>
+.mktoForm {
+	display: none;
+}
+.mktoForm[data-form-styling-reset="done"] {
+	display: block;
+}
+.mktoForm input {
+	margin: 0;
+}
+.mktoForm .btn {
+	line-height: 37px;
+	font-size: 16px;
+	width: 100%
+}
+@media screen and (max-width: 640px) {
+	.mktoForm .btn {
+		width: auto;
+	}
+}
+.mktoFieldDescriptor {
+	position: relative;
+	margin-bottom: 27px
+}
+.mktoError {
+	position: absolute;
+	right: auto !important;
+	bottom: -18px !important;
+	font-size: 14px;
+	line-height: 14px;
+	width: 100%
+}
+.mktoError .mktoErrorArrowWrap {
+	display: none
+}
+.mktoError .mktoErrorDetail {
+	display: none
+}
+.mktoAsterix {
+	display: none
+}
+
+@media screen and (min-width: 640px) {
+	.blog-subscribe-form .mktoFormRow, .blog-subscribe-form .mktoButtonRow, .guide-download-form .mktoFormRow, .guide-download-form .mktoButtonRow {
+		float: left
+	}
+}
+.mktoButtonRow {
+	margin-bottom: 22px;
+}
+.guide-download-form .mktoFormRow {
+	margin-top: 6px;
+}
+</style>
+
+<script nonce="">
+function inDomainList(email, domains) {
+	return domains.map(function(domain) {
+		return new RegExp('@' + domain.replace('.', '\\.') + '$', 'i');
+	}).some(function(reDomain) {
+		return reDomain.test(email);
+	});
+}
+MktoForms2.whenReady(function(form) {
+	var freemailDomains = ["gmail.com", "yahoo.com", "msn.com", "hotmail.com", "icloud.com"],
+		errorFreemail = "Please use a business email.";
+	var formEl = form.getFormElem()[0],
+		emailEl = formEl.querySelector("input[name='Email']"),
+		emailJq = MktoForms2.$(emailEl);
+	form.onValidate(function(native) {
+		if (!native) return;
+		var currentValues = form.getValues(),
+    	currentEmail = currentValues.Email,
+	    currentFormId = currentValues.formid;
+
+		//testing on formid=1196 (startups)
+		if(currentFormId == 1196) {
+	    if (inDomainList(currentEmail, freemailDomains)) {
+				form.submittable(false);
+				form.showErrorMessage(errorFreemail, emailJq);
+			} else {
+				form.submittable(true);
+			}
+		}
+	});
+	form.onSubmit(function() {
+		var currentValues = form.getValues(),
+			currentEmail = currentValues.Email,
+			currentFormId = currentValues.formid;
+
+		//testing on formid=1414 (contact-sales)
+		if(currentFormId == 1414) {
+			window.dataLayer.push({
+				"event": "mkto.form.onSubmit",
+				"mkto.form.id": form.getId(),
+				"mkto.form.values": form.getValues(),
+				"email_value": currentEmail
+			});
+		}
+	});
+});
+</script>
+<script nonce="">
+function destyleMktoForm(mktoForm, moreStyles){
+	var formEl = mktoForm.getFormElem()[0],
+		arrayFrom = Function.prototype.call.bind(Array.prototype.slice),
+		options = options || {};
+
+	if (!options.keepInline) {
+		var styledEls = arrayFrom(formEl.querySelectorAll("[style]")).concat(formEl);
+		styledEls.forEach(function(el) {
+			el.removeAttribute("style");
+		});
+		var wrappedHiddenFields = mktoForm.getFormElem().find(".mktoFormRow").find("input[type=hidden]");
+		var wrappedParents = wrappedHiddenFields.closest(".mktoFormRow");
+		wrappedHiddenFields.appendTo(formEl);
+		wrappedParents.remove();
+	}
+
+	if (!options.keepSheets) {
+		var styleSheets = arrayFrom(document.styleSheets);
+		styleSheets.forEach(function(ss) {
+			if ([mktoForms2BaseStyle, mktoForms2ThemeStyle].indexOf(ss.ownerNode) != -1 || formEl.contains(ss.ownerNode)) {
+				ss.disabled = true;
+			}
+		});
+	}
+
+	mktoForm.getFormElem().find( "button" ).addClass("btn");
+
+	if (!options.moreStyles) {
+		formEl.setAttribute("data-form-styling-reset", "done");
+	}
+}
+MktoForms2.whenRendered(function(form) {
+	destyleMktoForm(form);
+});
+
+	/* config area - replace with your instance values */
+
+	var mktoFormConfig = {
+	      podId : 'https://app-sj30.marketo.com',
+	      munchkinId : '099-SJL-057',
+	      formIds : [1, 1011, 1018, 1089, 1107, 1108, 1120, 1128, 1134, 1150, 1165, 1179, 1181, 1185, 1190, 1193, 1195, 1196, 1205, 1208, 1230, 1243, 1250, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1328, 1331, 1332, 1333, 1340, 1350, 1356, 1363, 1378, 1380, 1381, 1382, 1383, 1396, 1398, 1400, 1403, 1408, 1414, 1415]
+	};
+
+	/* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
+
+	function mktoFormChain(config) {
+
+	    /* util */
+	    var arrayFrom = Function.prototype.call.bind(Array.prototype.slice);
+
+	    /* const */
+	    var MKTOFORM_ID_ATTRNAME = "data-formId";
+
+	    /* fix inter-form label bug! */
+	    MktoForms2.whenRendered(function(form) {
+	        var formEl = form.getFormElem()[0],
+	            rando = "_" + new Date().getTime() + Math.random();
+
+	        arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
+	            var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
+	            if (forEl) {
+	                labelEl.htmlFor = forEl.id = forEl.id + rando;
+	            }
+	        });
+			});
+
+	    /* chain, ensuring only one #mktoForm_nnn exists at a time */
+	    arrayFrom(config.formIds).forEach(function(formId) {
+	        var loadForm = MktoForms2.loadForm.bind(MktoForms2,config.podId,config.munchkinId,formId),
+	            formEls = arrayFrom(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
+
+	        (function loadFormCb(formEls) {
+	            var formEl = formEls.shift();
+							if (!formEl) return;
+	            formEl.id = "mktoForm_" + formId;
+
+	            loadForm(function(form) {
+	                formEl.id = "";
+	                if (formEls.length) {
+	                    loadFormCb(formEls);
+	                }
+	            });
+	        })(formEls);
+	    });
+	}
+</script>
+
+
+<form class="mktoForm" data-formid="1011"></form>
+      </div>
+  </div>
+</div>
+
+<script nonce="">
+jQuery(document).ready(function() {
+  if(jQuery('.mktoEmailField').length > 0) {
+    jQuery('.mktoEmailField').removeAttr('placeholder');
+  }
+});
+</script>
+      </div>
+    </div>
+
+    
+    <div class="article-body-promo-sidebar">
+      <div class="sidebar-signup">
+        <div>Sign up now and survey customers for free. You're minutes away from getting feedback!</div>
+        <a class="btn btn-primary-purple btn-mobile-scale-down sign-up" href="https://app.delighted.com/signup">Get started</a>
+      </div>
+      
+<div class="sidebar-free-guide">
+  <div class="sidebar-header">Free guide</div>
+  <div class="sidebar-content">Unlock the secret to collecting insightful customer feedback</div>
+  <div class="sidebar-link"><a href="https://delighted.com/guides/customer-experience-survey-guide">Get the guide <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div>
+  <div class="sidebar-footer-image"><img src="/wp-content/themes/blankslate/images/blog/guide-cx-survey-guide.png" width="260" height="224" alt="Delighted survey guide"></div>
+</div>
+    </div>
+  </div>
+
+<footer>
+  <hr class="article-blog-subscribe-separator">
+  <div class="related-posts">
+<div class="related-posts-headline">Keep Reading</div>
+          <div class="blog-section-article">
+            <a href="https://delighted.com/blog/customer-testimonials" title="8 customer testimonial examples and how to use them" class="article-hover">
+              <div class="blog-section-article-wrapper">
+                <img width="1200" height="630" src="https://delighted.com/wp-content/uploads/2019/08/customer-testimonials-blog-post-featured-image.png?w=1200" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Customer testimonials blog post featured image" decoding="async" srcset="https://delighted.com/wp-content/uploads/2019/08/customer-testimonials-blog-post-featured-image.png 1200w, https://delighted.com/wp-content/uploads/2019/08/customer-testimonials-blog-post-featured-image.png?resize=450,236 450w" sizes="(max-width: 1200px) 100vw, 1200px" />                <div class="blog-section-article-category">Taking Action </div>
+                <div class="blog-section-article-title">8 customer testimonial examples and how to use them</div>
+              </div>
+            </a>
+          </div>
+
+        
+          <div class="blog-section-article">
+            <a href="https://delighted.com/blog/digesting-negative-feedback" title="Navigating negative feedback: 5 tips for managing feedback burnout" class="article-hover">
+              <div class="blog-section-article-wrapper">
+                <img width="1200" height="630" src="https://delighted.com/wp-content/uploads/2023/08/digesting-negative-feedbac-blog-post-featured-image.png?w=1200" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Digesting negative feedback blog post featured image" decoding="async" srcset="https://delighted.com/wp-content/uploads/2023/08/digesting-negative-feedbac-blog-post-featured-image.png 1200w, https://delighted.com/wp-content/uploads/2023/08/digesting-negative-feedbac-blog-post-featured-image.png?resize=450,236 450w" sizes="(max-width: 1200px) 100vw, 1200px" />                <div class="blog-section-article-category">Taking Action </div>
+                <div class="blog-section-article-title">Navigating negative feedback: 5 tips for managing feedback burnout</div>
+              </div>
+            </a>
+          </div>
+
+        
+          <div class="blog-section-article">
+            <a href="https://delighted.com/blog/closed-loop-feedback" title="Closed-loop feedback: What it is and how to build a successful closed-loop feedback system" class="article-hover">
+              <div class="blog-section-article-wrapper">
+                <img width="1200" height="630" src="https://delighted.com/wp-content/uploads/2019/04/closing-customer-feedback-loop-202210-feat.png?w=1200" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Closed-loop feedback featured image" decoding="async" loading="lazy" srcset="https://delighted.com/wp-content/uploads/2019/04/closing-customer-feedback-loop-202210-feat.png 1200w, https://delighted.com/wp-content/uploads/2019/04/closing-customer-feedback-loop-202210-feat.png?resize=450,236 450w" sizes="(max-width: 1200px) 100vw, 1200px" />                <div class="blog-section-article-category">Taking Action </div>
+                <div class="blog-section-article-title">Closed-loop feedback: What it is and how to build a successful closed-loop feedback system</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+  
+<div class="ebook-story-footer">
+  <div class="ebook-footer-wrapper">
+                      <div class="ebook-footer-article">
+        <div class="ebook-footer-category">Delighted ebook</div>
+        <div class="ebook-footer-title"><a href="https://delighted.com/guides/customer-experience-maturity-assessment" title="Customer experience maturity assessment">Customer experience maturity assessment</a></div>
+      </div>
+                          <div class="ebook-footer-article">
+        <div class="ebook-footer-category">Delighted ebook</div>
+        <div class="ebook-footer-title"><a href="https://delighted.com/guides/customer-journey-map" title="The complete guide to customer journey mapping">The complete guide to customer journey mapping</a></div>
+      </div>
+                          <div class="ebook-footer-article">
+        <div class="ebook-footer-category">Qualtrics XM Institute ebook</div>
+        <div class="ebook-footer-title"><a href="https://delighted.com/guides/employee-engagement-ebook" title="The expert guide to employee engagement">The expert guide to employee engagement</a></div>
+      </div>
+                          <div class="ebook-footer-article">
+        <div class="ebook-footer-category">Delighted Report</div>
+        <div class="ebook-footer-title"><a href="https://delighted.com/guides/retail-consumer-trends" title="The top 8 omnichannel retail trends for 2021">The top 8 omnichannel retail trends for 2021</a></div>
+      </div>
+      </div>
+</div>
+  <div class="section line-border-bottom">
+    <div class="container container-more-vertical-space">
+      
+
+<div class="cols cols-24 feature-heading signout-spacing">
+  <div class="col-3-to-22">
+    <strong>Sign in</strong> to view your Delighted Dashboard and act on feedback!
+  </div>
+  <div class="col-3-to-22 btn-mid-page">
+    <a href="https://app.delighted.com/signin" class="btn btn-primary-purple btn-white-bg-when-disabled sign-up-form-btn">Sign in</a>
+  </div>
+</div>
+
+
+<script nonce="">
+(function($) {
+this.SignUpForm = (function() {
+  function SignUpForm(el) {
+    this.$el = $(el);
+    new FormValidator(this.$el, {
+      inputMap: [
+        {
+          $input: this.$el.find("input:visible:first"),
+          key: "email"
+        }, {
+          $input: this.$el.find("input:visible:last"),
+          key: "password"
+        }
+      ],
+      withCredentials: true
+    });
+  }
+  return SignUpForm;
+})();
+})(jQuery);
+new SignUpForm(".form-signup-16520");
+jQuery(function() {
+  jQuery(".form-signup-16520, .form-google-signup-16520, .form-signup-84842").each(function() {
+    window.addMarketoSignupPage(jQuery(this));
+  });
+  // });
+});
+
+
+
+</script>
+    </div>
+  </div>
+</footer>
+</article>
+  </main>
+<div class="footer-marketing">
+  <div class="container">
+    <div class="cols cols-5">
+      <div class="col-1-to-1">
+        <h3 class="muted">Product</h3>
+        <ul>
+          <li><a href="/surveys" class="footer-link-list-item subtle-link muted">Free survey maker</a></li>
+          <li><a href="/survey-templates" class="footer-link-list-item subtle-link muted">Survey templates</a></li>
+          <li><a href="/nps" class="footer-link-list-item subtle-link muted">NPS software</a></li>
+          <li><a href="/enps" class="footer-link-list-item subtle-link muted">eNPS</a></li>
+          <li><a href="/csat" class="footer-link-list-item subtle-link muted">CSAT software</a></li>
+          <li><a href="/ces" class="footer-link-list-item subtle-link muted">CES</a></li>
+          <li><a href="/5-star" class="footer-link-list-item subtle-link muted">5-star</a></li>
+          <li><a href="/smiley-face-survey" class="footer-link-list-item subtle-link muted">Smileys</a></li>
+          <li><a href="/thumbs-survey" class="footer-link-list-item subtle-link muted">Thumbs</a></li>
+          <li><a href="/pmf" class="footer-link-list-item subtle-link muted">PMF survey</a></li>
+          <li><a href="/email" class="footer-link-list-item subtle-link muted">Email survey</a></li>
+          <li><a href="/web" class="footer-link-list-item subtle-link muted">Web</a></li>
+          <li><a href="/link-survey" class="footer-link-list-item subtle-link muted">Link</a></li>
+          <li><a href="/sdk" class="footer-link-list-item subtle-link muted">iOS SDK</a></li>
+        </ul>
+      </div>
+      <div class="col-2-to-2">
+        <h3 class="footer-whitespace">&nbsp;</h3>
+        <ul>
+          <li><a href="/reporting" class="footer-link-list-item subtle-link muted">Reporting</a></li>
+          <li><a href="/ai" class="footer-link-list-item subtle-link muted">Delighted AI</a></li>
+          <li><a href="/testimonials" class="footer-link-list-item subtle-link muted">Testimonials</a></li>
+          <li><a href="/features" class="footer-link-list-item subtle-link muted">Features</a></li>
+          <li><a href="/our-integrations" class="footer-link-list-item subtle-link muted">Integrations</a></li>
+          <li><a href="/customers" class="footer-link-list-item subtle-link muted">Customers</a></li>
+          <li><a href="/enterprise" class="footer-link-list-item subtle-link muted">Enterprise</a></li>
+          <li><a href="/nonprofit-survey" class="footer-link-list-item subtle-link muted">Nonprofits</a></li>
+          <li><a href="/pricing" class="footer-link-list-item subtle-link muted">Pricing</a></li>
+          <li><a href="https://demo.delighted.com" class="footer-link-list-item subtle-link muted">Live demo</a></li>
+        </ul>
+      </div>
+      <div class="col-3-to-3">
+        <h3 class="muted">Resources</h3>
+        <ul>
+          <li><a href="/net-promoter-score" class="footer-link-list-item subtle-link muted">What is NPS?</a></li>
+          <li><a href="/nps-survey" class="footer-link-list-item subtle-link muted">NPS examples</a></li>
+          <li><a href="/nps-calculator" class="footer-link-list-item subtle-link muted">NPS calculator</a></li>
+          <li><a href="/nps-benchmarks" class="footer-link-list-item subtle-link muted">NPS benchmarks</a></li>
+          <li><a href="/what-is-customer-satisfaction-score" class="footer-link-list-item subtle-link muted">What is CSAT?</a></li>
+          <li><a href="/what-is-customer-effort-score" class="footer-link-list-item subtle-link muted">What is CES?</a></li>
+          <li><a href="/blog/how-to-measure-and-track-product-market-fit" class="footer-link-list-item subtle-link muted">What is product/market fit?</a></li>
+          <li><a href="/blog/what-is-employee-experience" class="footer-link-list-item subtle-link muted">Employee experience management</a></li>
+          <li><a href="/blog/customer-experience-metrics-brand-success" class="footer-link-list-item subtle-link muted">Customer experience metrics</a></li>
+          <li><a href="/sample-size-calculator" class="footer-link-list-item subtle-link muted">Sample size calculator</a></li>
+        </ul>
+      </div>
+      <div class="col-4-to-4">
+        <h3 class="muted">Help</h3>
+        <ul>
+          <li><a href="https://surveys-help.delighted.com/" class="footer-link-list-item subtle-link muted">Surveys Help</a></li>
+          <li><a href="https://help.delighted.com/" class="footer-link-list-item subtle-link muted">Templates Help</a></li>
+          <li><a href="/community" class="footer-link-list-item subtle-link muted">Community</a></li>
+          <li><a href="/mobile-apps" class="footer-link-list-item subtle-link muted">Mobile app</a></li>
+          <li><a href="https://app.delighted.com/docs/api" class="footer-link-list-item subtle-link muted">API docs</a></li>
+          <li><a href="mailto:hello@delighted.com" class="footer-link-list-item subtle-link muted">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-5-to-5">
+        <h3 class="muted">Company</h3>
+        <ul>
+          <li><a href="/qualtrics" class="footer-link-list-item subtle-link muted">Delighted + Qualtrics</a></li>
+          <li><a href="/partners" class="footer-link-list-item subtle-link muted">Partners</a></li>
+          <li><a href="/blog" class="footer-link-list-item subtle-link muted">Blog</a></li>
+          <li><a href="/jobs" class="footer-link-list-item subtle-link muted">Jobs</a></li>
+          <li><a href="/security" class="footer-link-list-item subtle-link muted">Security</a></li>
+          <li><a href="https://app.delighted.com/terms" class="footer-link-list-item subtle-link muted">Terms</a></li>
+          <li><a href="https://app.delighted.com/privacy" class="footer-link-list-item subtle-link muted">Privacy</a></li>
+          <li>
+            <!-- OneTrust Cookies Settings link start -->
+            <a class="ot-sdk-show-settings footer-link-list-item subtle-link muted">Cookie Preferences</a>
+            <!-- OneTrust Cookies Settings link end -->
+          </li>
+          <li><a href="/sitemap" class="footer-link-list-item subtle-link muted">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cols cols-5">
+      <div class="col-1-to-3">
+        <p class="muted">
+          &copy; 2013&ndash;2024 Delighted, LLC
+        </p>
+      </div>
+      <div class="col-5-to-5">
+        <div class="footer-links-social">
+          <a href="https://twitter.com/delighted" class="ss-icon-social-circle ss-icon-large footer-links-social-service muted">&#xF611;</a>
+          <a href="https://www.facebook.com/delighted" class="ss-icon-social-circle ss-icon-large footer-links-social-service muted">&#xF610;</a>
+          <a href="https://www.linkedin.com/company/delighted-inc-/" class="ss-icon-social-circle ss-icon-large footer-links-social-service muted">&#xF612;</a>
+          <a href="https://www.youtube.com/channel/UCPK3c3ihD64X2zdGbdF-ceA" class="ss-icon-social-circle ss-icon-large footer-links-social-service muted">&#xF630;</a>
+        <!--Weglot 3.9.2--><aside data-wg-notranslate="" class="country-selector weglot-dropdown weglot-custom-switcher" tabindex="0" aria-expanded="false" role="listbox" aria-activedescendant="weglot-language-en" aria-label="Language selected: English"><input id="wg170974291565e89b43901eb210" class="weglot_choice" type="checkbox" name="menu"/><label data-l="en" tabindex="-1" id="weglot-language-en" role="none" for="wg170974291565e89b43901eb210" class="wgcurrent wg-li weglot-lang weglot-language flag-0 en" data-code-language="en" data-name-language="English"><span class="wglanguage-name">English</span></label><ul role="none"><li data-l="es" class="wg-li weglot-lang weglot-language flag-0 es" data-code-language="es" role="none"><a title="Language switcher : Spanish" id="weglot-language-es" role="option" data-wg-notranslate="" href="https://delighted.com/es/blog/12-razones-para-hacer-un-seguimiento-de-los-detractores">Español</a></li><li data-l="de" class="wg-li weglot-lang weglot-language flag-0 de" data-code-language="de" role="none"><a title="Language switcher : German" id="weglot-language-de" role="option" data-wg-notranslate="" href="https://delighted.com/de/blog/12-reasons-to-follow-up-with-detractors">Deutsch</a></li><li data-l="pt-br" class="wg-li weglot-lang weglot-language flag-0 br" data-code-language="br" role="none"><a title="Language switcher : Brazilian Portuguese" id="weglot-language-pt-br" role="option" data-wg-notranslate="" href="https://delighted.com/pt-br/blog/12-reasons-to-follow-up-with-detractors">Português Brasileiro</a></li></ul></aside></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cols cols-24">
+      <div class="col-1-to-15">
+        <div class="footer-nps-legal muted">
+                      <p>
+              NPS is a registered trademark, and <a class="subtle-link muted" href="/net-promoter-score">Net Promoter Score</a> is a service mark of Bain &amp; Company, Inc., Satmetrix Systems, Inc. and Fred Reichheld.
+            </p>
+                  </div>
+      </div>
+    </div>
+  </div>
+</div>
+			<script nonce="4e539ddb54a973f4273e617f732e58a3a5386ae0c230939482564c50ca34318f">
+				var request = new XMLHttpRequest();
+				var url = 'ht' + 'tps:' + '//' + 'cdn-api.weglot.com/' + 'pageviews?api_key=' + 'wg_76a733c184b14e7c9b823158f23e15786';
+				var data = JSON.stringify({
+						url: location.protocol + '//' + location.host + location.pathname,
+						language: document.getElementsByTagName('html')[0].getAttribute('lang'),
+						browser_language: (navigator.language || navigator.userLanguage)
+					}
+				);
+				request.open('POST', url , true);
+				request.send(data);
+			</script>
+		<link rel='stylesheet' id='wpcom-notes-admin-bar-css' href='https://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.css?ver=13.1.3-202410-lite' media='all' />
+<link rel='stylesheet' id='noticons-css' href='https://s0.wp.com/i/noticons/noticons.css?ver=13.1.3-202410-lite' media='all' />
+<script type="text/javascript" src="https://delighted.com/_static/??-eJyVk0tywyAMQC9Ux00XTbro9CiMAGWMDYhIYNc9fUnTRacrZcnwHhL6jFsZQnaxeZRxlnGiFTnkirkOsxxSyIdZnsZ/FPh+MVjgv4CjH22sE6aO2Qh5kQgVb4Zl2gTZBN+RcNlVUmpSwU2ojiKOKUYTyS0qHrM0RrOFOoVs7vYacFPJrmdHyQhGdFWdIuSQoIKNqMJLP5kCGaMev2dE/LhhGC+MMqnMnVptFg0mi15lzNeGvB822Av1GRN10TwmMmufHXqgM33aHLAXZYQKIRrPsKGucNcW3GLmlooKnxB8z8gzFU+b7tsJeMFKvT0igXROCZ/KWbltOUvve396INu3s6/+UCjulxCjujeRvsD/0h/p/Xh6fns9nc8vx/kbASuoKA==" ></script><script src="https://delighted.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19" id="lodash-js"></script>
+<script id="lodash-js-after">
+window.lodash = _.noConflict();
+</script>
+<script type="text/javascript" src="https://delighted.com/_static/??-eJzTLy/QzcxLzilNSS3WzyrWT8ksLtEvS81LyS/SB0oV5OdUpmXm5ADVpBaV6OVm5ullFevo49FUlJqeClSbWJJfpFtUmleSmZtKjDYku6DK7XNtDc0NLM3MLSyMDLIA5Xs9rg==" ></script><script src="https://delighted.com/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
+<script src="https://delighted.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
+<script type="text/javascript" src="https://delighted.com/_static/??-eJx9zEEOgyAQRuELiaMu1C6anoXAnwDOAHUwXt9Vdw3r9+XRXU3Mji8PpaTkozYKpRw6Ssxj0oH+CY96wtkG32dFuh3qbIUJTbjvGILcuiaq0WCZy23wvexv+JH3vE2vddv3ZUoPQa1WeA==" ></script><script src="https://delighted.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="https://delighted.com/wp-includes/js/dist/keycodes.min.js?ver=3460bd0fac9859d6886c" id="wp-keycodes-js"></script>
+<script type="text/javascript" src="https://delighted.com/_static/??-eJx9zDsSQDAQANALiUUhFMZZjGyxGfnIZn1uT6Mz6d88OKMiv25ikMEyGOIMMVFIlG+1CwrWjnxtuYI/ugYXA5fN2x1LRrVE4iJMaORSKUgm/5Wzm1rdjL0ehq6xD3lOP7Y=" ></script><script src="https://delighted.com/wp-includes/js/dist/data.min.js?ver=dc5f255634f3da29c8d5" id="wp-data-js"></script>
+<script id="wp-data-js-after">
+( function() {
+	var userId = 22;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+</script>
+<script type="text/javascript" src="https://delighted.com/_static/??/wp-includes/js/dist/dom-ready.min.js,/wp-includes/js/dist/autop.min.js,/wp-content/plugins/wordpress-seo/js/dist/externals/featureFlag.js?m=1709678820j" ></script><script src="https://delighted.com/wp-content/plugins/wordpress-seo/js/dist/externals/analysis.js?ver=f1c22b17489b24369b1feb463be37769" id="yoast-seo-analysis-package-js"></script>
+<script src="https://delighted.com/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608" id="wp-a11y-js"></script>
+<script type="text/javascript" src="https://delighted.com/_static/??-eJydzMENgzAMBdCFALcIFTigHliBBRCxKqJgW/lGlO1bVmCA9+iwclFxFidL+2cV0KE5WGagBCtFUFjhxF/nLHMCWVabTmNUEQXdCOBn4jDqZip/dz3vbXi+ukfXt23dxB8e0zh3" ></script><script src="https://delighted.com/wp-content/plugins/wordpress-seo/js/dist/externals/helpers.js?ver=bd8f7d6d82c96202954a1a5ba213d2e0" id="yoast-seo-helpers-package-js"></script>
+<script type="text/javascript" src="https://delighted.com/_static/??/wp-content/plugins/wordpress-seo/js/dist/react-select.js,/wp-content/plugins/wordpress-seo/js/dist/externals/styleGuide.js?m=1680897724j" ></script><script src="https://delighted.com/wp-content/plugins/wordpress-seo/js/dist/externals/componentsNew.js?ver=31417ade2afa0aecd031e7f5d67e8cd7" id="yoast-seo-components-new-package-js"></script>
+<script type="text/javascript" src="https://delighted.com/wp-content/plugins/wordpress-seo/js/dist/languages/en.js?m=1680897724g" ></script><script src="https://delighted.com/wp-content/plugins/wordpress-seo/js/dist/frontend-inspector-resources.js?ver=ae097271baf12c403c1e73a469dedfe5" id="yoast-seo-frontend-inspector-resources-js"></script>
+<script id="yoast-seo-premium-frontend-inspector-js-extra">
+var wpseoScriptData = {"frontendInspector":{"isIndexable":true,"indexable":{"is_robots_noindex":null,"primary_focus_keyword":"what is a detractor","primary_focus_keyword_score":78,"readability_score":30},"contentAnalysisActive":true,"keywordAnalysisActive":true}};
+</script>
+<script type="text/javascript" src="https://delighted.com/wp-content/plugins/wordpress-seo-premium/assets/js/dist/frontend-inspector-2040.min.js?m=1680897724g" ></script><script src="https://s0.wp.com/wp-content/mu-plugins/notes/notes-common-lite.min.js?ver=13.1.3-202410-lite" id="wpcom-notes-common-js"></script>
+<script src="https://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.js?ver=13.1.3-202410-lite" id="wpcom-notes-admin-bar-js"></script>
+<script nonce="">lozad(".lazy-load", {
+    rootMargin: "300px 0px"
+  }).observe();</script>		<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://delighted.com/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='https://delighted.com/wp-admin/about.php'>About WordPress</a></li><li id='wp-admin-bar-contribute'><a class='ab-item' href='https://delighted.com/wp-admin/contribute.php'>Get Involved</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://wordpress.org/documentation/'>Documentation</a></li><li id='wp-admin-bar-learn'><a class='ab-item' href='https://learn.wordpress.org/'>Learn WordPress</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/forums/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://delighted.com/wp-admin/'>Delighted</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-dashboard'><a class='ab-item' href='https://delighted.com/wp-admin/'>Dashboard</a></li></ul></div></li><li id='wp-admin-bar-comments'><a class='ab-item' href='https://delighted.com/wp-admin/edit-comments.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://delighted.com/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' href='https://delighted.com/wp-admin/post-new.php'>Post</a></li></ul></div></li><li id='wp-admin-bar-wpseo-menu' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><div id="yoast-ab-icon" class="ab-item yoast-logo svg"><span class="screen-reader-text">SEO</span></div><div aria-hidden="true" title="Good" class="wpseo-score-icon good adminbar-seo-score"><span class="wpseo-score-text screen-reader-text">Good</span></div></div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-menu-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-frontend-inspector'><a class='ab-item' tabindex="0" href='#wpseo-frontend-inspector'>Front-end SEO inspector <span class="yoast-badge yoast-beta-badge">Beta</span></a></li><li id='wp-admin-bar-wpseo-seo-focus-keyword'><div class="ab-item ab-empty-item" tabindex="0">Focus keyphrase: <span class="wpseo-focus-keyword">what is a detractor</span></div></li><li id='wp-admin-bar-wpseo-seo-score'><div class="ab-item ab-empty-item" tabindex="0">SEO score: <div aria-hidden="true" title="Good" class="wpseo-score-icon good adminbar-sub-menu-score"><span class="wpseo-score-text screen-reader-text">Good</span></div></div></li><li id='wp-admin-bar-wpseo-readability-score'><div class="ab-item ab-empty-item" tabindex="0">Readability: <div aria-hidden="true" title="Needs improvement" class="wpseo-score-icon bad adminbar-sub-menu-score"><span class="wpseo-score-text screen-reader-text">Needs improvement</span></div></div></li><li id='wp-admin-bar-wpseo-analysis' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Analyze this page</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-analysis-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-inlinks'><a class='ab-item' href='https://search.google.com/search-console/links/drilldown?resource_id=https%3A%2F%2Fdelighted.com&#038;type=EXTERNAL&#038;target=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors&#038;domain=' target='_blank'>Check links to this URL</a></li><li id='wp-admin-bar-wpseo-structureddata'><a class='ab-item' href='https://search.google.com/test/rich-results?url=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors' target='_blank'>Google Rich Results Test</a></li><li id='wp-admin-bar-wpseo-facebookdebug'><a class='ab-item' href='//developers.facebook.com/tools/debug/?q=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors' target='_blank'>Facebook Debugger</a></li><li id='wp-admin-bar-wpseo-pagespeed'><a class='ab-item' href='//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors' target='_blank'>Google Page Speed Test</a></li><li id='wp-admin-bar-wpseo-google-mobile-friendly'><a class='ab-item' href='https://www.google.com/webmasters/tools/mobile-friendly/?url=https%3A%2F%2Fdelighted.com%2Fblog%2F12-reasons-to-follow-up-with-detractors' target='_blank'>Mobile-Friendly Test</a></li></ul></div></li><li id='wp-admin-bar-wpseo-sub-tools' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>SEO Tools</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-sub-tools-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-semrush'><a class='ab-item' href='https://yoa.st/admin-bar-semrush?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Semrush</a></li><li id='wp-admin-bar-wpseo-wincher'><a class='ab-item' href='https://yoa.st/admin-bar-wincher?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Wincher</a></li><li id='wp-admin-bar-wpseo-google-trends'><a class='ab-item' href='https://yoa.st/admin-bar-gtrends?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Google trends</a></li></ul></div></li><li id='wp-admin-bar-wpseo-sub-howto' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>How to</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-sub-howto-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-learn-seo'><a class='ab-item' href='https://yoa.st/admin-bar-learn-more-seo?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Learn more SEO</a></li><li id='wp-admin-bar-wpseo-improve-blogpost'><a class='ab-item' href='https://yoa.st/admin-bar-improve-blog-post?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Improve your blog post</a></li><li id='wp-admin-bar-wpseo-write-better-content'><a class='ab-item' href='https://yoa.st/admin-bar-write-better?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Write better content</a></li></ul></div></li><li id='wp-admin-bar-wpseo-sub-get-help' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Help</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-sub-get-help-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-yoast-help'><a class='ab-item' href='https://yoa.st/admin-bar-yoast-help?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Yoast.com help section</a></li><li id='wp-admin-bar-wpseo-premium-support'><a class='ab-item' href='https://yoa.st/admin-bar-premium-support?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Yoast Premium support</a></li><li id='wp-admin-bar-wpseo-wp-support-forums'><a class='ab-item' href='https://yoa.st/admin-bar-wp-support-forums?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>WordPress.org support forums</a></li><li id='wp-admin-bar-wpseo-learn-seo-2'><a class='ab-item' href='https://yoa.st/admin-bar-learn-more-seo-help?php_version=8.1&#038;platform=wordpress&#038;platform_version=6.4.3&#038;software=premium&#038;software_version=20.4&#038;days_active=181-365&#038;user_language=en_US' target='_blank'>Learn more SEO</a></li></ul></div></li></ul></div></li><li id='wp-admin-bar-weglot' class="menupop"><div class="ab-item ab-empty-item" aria-haspopup="true">Weglot</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-weglot-default' class="ab-submenu"><li id='wp-admin-bar-weglot-settings'><a class='ab-item' href='https://delighted.com/wp-admin/admin.php?page=weglot-settings'>Plugin settings</a></li><li id='wp-admin-bar-weglot-dashboard'><a class='ab-item' href='https://dashboard.weglot.com/translations/' target='_blank'>Weglot dashboard</a></li><li id='wp-admin-bar-weglot-visual-editor'><a class='ab-item' href='https://dashboard.weglot.com/translations/visual-editor/?url=https://delighted.com/blog/12-reasons-to-follow-up-with-detractors' target='_blank'>Edit with visual editor</a></li></ul></div></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://delighted.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search" /></form></div></li><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://delighted.com/wp-admin/profile.php'>Howdy, <span class="display-name">Jack Gerli</span><img alt='' src='https://secure.gravatar.com/avatar/488ea9aebfc9f4afc854bad7dad97220?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/488ea9aebfc9f4afc854bad7dad97220?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy' decoding='async'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://delighted.com/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/488ea9aebfc9f4afc854bad7dad97220?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/488ea9aebfc9f4afc854bad7dad97220?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy' decoding='async'/><span class='display-name'>Jack Gerli</span><span class='username'>jack@delighted.com</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://delighted.com/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://delighted.com/wp-login.php?action=logout&#038;_wpnonce=012307ec8a'>Log Out</a></li></ul></div></li><li id='wp-admin-bar-notes' class="menupop"><a class='ab-item' href='https://wordpress.com/notifications'><span id="wpnt-notes-unread-count" class="wpnt-loading wpn-read">
+					<span class="screen-reader-text">Notifications</span>
+					<span class="noticon noticon-notification"></span>
+					</span></a><div id="wpnt-notes-panel2" class="intrinsic-ignore" style="display:none" lang="en" dir="ltr"><div class="wpnt-notes-panel-header"><span class="wpnt-notes-header">Notifications</span><span class="wpnt-notes-panel-link"></span></div></div><span style="display:none;"><iframe class="jetpack-notes-cookie-check" src="https://widgets.wp.com/3rd-party-cookie-check/index.html"></iframe></span></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://delighted.com/wp-login.php?action=logout&#038;_wpnonce=012307ec8a">Log Out</a>
+					</div>
+
+		</div>
+<script type="text/javascript" charset="utf-8" nonce="">
+  jQuery(() => {
+    this.updateMarketoSessionData();
+    PixelSet.visitedSite().render(jQuery(document.body))
+  });
+
+  mktoFormChain(mktoFormConfig);
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"04cd7c1181","applicationID":"258505292","transactionName":"YgBSNkpVWEYEVxBcDVtKcQFMXVlbSkcNWwVZAA==","queueTime":0,"applicationTime":281,"atts":"TkdFQAJPSxlHVUYPGUgY","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
